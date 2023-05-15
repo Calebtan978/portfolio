@@ -3,6 +3,7 @@ import Main from '../components/Main';
 import Navbar from '../components/navbar';
 
 const HomePage = () => {
+  console.log('HomePage')
   // States
   const [nav, setNav] = useState(false)
 

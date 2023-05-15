@@ -16,6 +16,7 @@ const Main = ({ nav, handleNav }) => {
 	const [visible, setVisible] = useState(false);
 
 	const toggleVisible = () => {
+		console.log("toggleVisible is called!");
 		const scrolled = document.documentElement.scrollTop;
 		if (scrolled > 300) {
 			setVisible(true);
@@ -89,7 +90,7 @@ const Main = ({ nav, handleNav }) => {
 				onClick={scrollToTop}>
 				<AiOutlineArrowUp />
 			</motion.div>
-			<Navbar></Navbar>
+			{/* <Navbar nav={ nav } handleNav={ handleNav }></Navbar> */}
 		</div>
 	);
 };
