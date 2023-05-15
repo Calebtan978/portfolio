@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "../../styles/HeroSection.css";
+import "../../styles/Home.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BiDownload } from "react-icons/bi";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
-const HeroSection = ({ nav, handleNav }) => {
+const Home = ({ nav, handleNav }) => {
 	const heroVariants = {
 		hidden: {
 			opacity: 0,
@@ -65,4 +65,4 @@ const HeroSection = ({ nav, handleNav }) => {
 	);
 };
 
-export default HeroSection;
+export default Home;

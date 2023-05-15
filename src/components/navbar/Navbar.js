@@ -9,6 +9,7 @@ import NavLinks from "./NavLinks";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
+import subComponents from "../subComponents";
 
 const navVariants = {
 	hidden: {
@@ -79,84 +80,24 @@ const Navbar = ({ nav, handleNav }) => {
 							<NavLinks handleNav={handleNav} />
 						</div>
 						<ul className='mid-details'>
-							<Link
-								activeClass='active'
-								spy={true}
-								smooth={true}
-								offset={0}
-								duration={500}
-								to='home'
-								className='mid-links'>
-								<FaHome className='mid-icon' />
-								<li className='mid-link' onClick={handleNav}>
-									Home
-								</li>
-							</Link>
-							<Link
-								activeClass='active'
-								spy={true}
-								smooth={true}
-								offset={0}
-								duration={500}
-								to='about'
-								className='mid-links'>
-								<FiUser className='mid-icon' />
-								<li className='mid-link' onClick={handleNav}>
-									About
-								</li>
-							</Link>
-							<Link
-								activeClass='active'
-								spy={true}
-								smooth={true}
-								offset={0}
-								duration={500}
-								to='skills'
-								className='mid-links'>
-								<FaLaptop className='mid-icon' />
-								<li className='mid-link' onClick={handleNav}>
-									Skills
-								</li>
-							</Link>
-							<Link
-								activeClass='active'
-								spy={true}
-								smooth={true}
-								offset={0}
-								duration={500}
-								to='services'
-								className='mid-links'>
-								<BiServer className='mid-icon' />
-								<li className='mid-link' onClick={handleNav}>
-									Services
-								</li>
-							</Link>
-							<Link
-								activeClass='active'
-								spy={true}
-								smooth={true}
-								offset={0}
-								duration={500}
-								to='works'
-								className='mid-links'>
-								<BiBookContent className='mid-icon' />
-								<li className='mid-link' onClick={handleNav}>
-									Works
-								</li>
-							</Link>
-							<Link
-								activeClass='active'
-								spy={true}
-								smooth={true}
-								offset={0}
-								duration={500}
-								to='contact'
-								className='mid-links'>
-								<BiEnvelope className='mid-icon' />
-								<li className='mid-link' onClick={handleNav}>
-									Contact
-								</li>
-							</Link>
+							{subComponents.map((w, index) => {
+								return(
+									<Link
+										activeClass='active'
+										spy={true}
+										smooth={true}
+										offset={0}
+										duration={500}
+										key={index}
+										to={w.here}
+										className='mid-links'>
+										{w.icon}
+										<li className='mid-link' onClick={handleNav}>
+											{w.name}
+										</li>
+									</Link>
+								)
+							})}
 						</ul>
 						<div className='copy'>
 							<small className='copyright'>
