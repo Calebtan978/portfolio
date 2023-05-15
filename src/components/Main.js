@@ -1,15 +1,16 @@
 import React from 'react';
-import About from './About';
-import Contact from './Contact';
-import HeroSection from './HeroSection';
-import Services from './Services';
-import Skills from './Skills';
-import Works from './Works';
+import About from './subComponents/About';
+import Contact from './subComponents/Contact';
+import HeroSection from './subComponents/HeroSection';
+import Services from './subComponents/Services';
+import Skills from './subComponents/Skills';
+import Works from './subComponents/Works';
 
 const Main = ({nav, handleNav, closeNav}) => {
+  console.log("Main func is called!");
   return(
     <div onClick={closeNav } className='main'>
-        <HeroSection nav={nav} handleNav={handleNav} />
+        <HeroSection/>
         <About />
         <Skills />
         <Services />

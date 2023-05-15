@@ -1,7 +1,7 @@
 import React from 'react';
-import "../styles/About.css"
+import "../../styles/About.css"
 import { motion } from "framer-motion";
-import ProfileImg from '../images/profile.jpg'
+import GreetingLottie from '../DisplayLottie';
 
 const About = () => {  
   
@@ -25,8 +25,8 @@ const About = () => {
                         <br />
                         <p> I’ve had the privilege of working with some experienced professionals which has enhanced my skills and rate of learning. My main focus these days is building accessible, inclusive products and digital experiences, as well as creating designs and illustrations. With my experience I have what it takes to solve real world problems</p>
                     </motion.div>
-                    <motion.div initial={{x: '50', opacity: 0}} whileInView={horizontal}  className='about-img'>
-                        <img src={ProfileImg} alt="Profile" />
+                    <motion.div initial={{x: '100%', opacity: 0}} whileInView={horizontal}  className='about-img'>
+                      <GreetingLottie animationPath="/lottie/coding.json" />
                     </motion.div>
                   </div>
               </div>

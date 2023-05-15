@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/Services.css"
+import "../../styles/Services.css"
 import {IoColorWandOutline} from "react-icons/io5"
 import {BiCodeAlt} from "react-icons/bi"
 import { motion } from "framer-motion";

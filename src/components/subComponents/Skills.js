@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/Skills.css";
+import "../../styles/Skills.css";
 import { motion } from "framer-motion";
-import { SkillsData } from "../data/SkillsData";
+import { SkillsData } from "../../data/SkillsData";
 
 const Skills = () => {
 	const skillEffect = {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/HeroSection.css";
+import "../../styles/HeroSection.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BiDownload } from "react-icons/bi";
 import { AiOutlineArrowUp } from "react-icons/ai";

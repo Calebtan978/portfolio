@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/Works.css";
+import "../../styles/Works.css";
 import { IoOpenOutline } from "react-icons/io5";
 import { FiFolder, FiGithub } from "react-icons/fi";
-import { WorkData } from "../data/WorkData";
+import { WorkData } from "../../data/WorkData";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Main from '../components/Main';
-import Navbar from '../components/navbar/Navbar';
+import Navbar from '../components/navbar';
 
 const HomePage = () => {
   // States
