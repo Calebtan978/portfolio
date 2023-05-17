@@ -1,11 +1,13 @@
 import subComponents from "./subComponents";
 
-const Main = ({nav, handleNav, closeNav}) => {
+const Main = ({closeNav}) => {
   return(
     <div onClick={closeNav } className='main'>
         {subComponents.map((w, index) => {
           return(
-            w.component
+            <div key = {index}>
+              {w.component}
+            </div>
           )
         })}
     </div>

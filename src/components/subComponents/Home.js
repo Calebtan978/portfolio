@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../../styles/Home.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { BiDownload } from "react-icons/bi";
-import { AiOutlineArrowUp } from "react-icons/ai";
+import { BsBookmarkDash } from "react-icons/bs";
+import { AiOutlineArrowUp, AiOutlineBook } from "react-icons/ai";
 import { animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
@@ -55,10 +55,10 @@ const Home = ({ nav, handleNav }) => {
 				initial='hidden'
 				whileInView='visible'>
 				<a
-					href='Peace Jinadu-Paul CV.pdf'
-					download='Peace Jinadu-Paul CV'
-					className='hero-contact'>
-					Download CV <BiDownload className='cv-icon' />
+					href='Caleb Tan CV.pdf'
+					className='hero-contact'
+					target='_blank'>
+					SEE MY CV <BsBookmarkDash className='cv-icon' />
 				</a>
 			</motion.span>
 		</div>

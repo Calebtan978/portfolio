@@ -105,13 +105,13 @@ html, body {
   animation: 3s ease 0s 1 pageLoad;
 }
 .text {
-  font-size: 16px;
+  font-size: 22px;
   text-transform: uppercase;
   line-height: 32px;
   letter-spacing: 8px;
   color: #fff;
   position: absolute;
-  left: 20px;
+  text-align: center;
   top: 10px;
   width: 100%;
   transform: translate(-50% -50%);
