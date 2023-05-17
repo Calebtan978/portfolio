@@ -3,6 +3,8 @@ import "../../styles/Services.css"
 import {IoColorWandOutline} from "react-icons/io5"
 import {BiCodeAlt} from "react-icons/bi"
 import { motion } from "framer-motion";
+import { BsStack } from "react-icons/bs";
+import { SiHiveBlockchain } from "react-icons/si";
 
 const Services = () => {
 
@@ -23,14 +25,14 @@ const Services = () => {
                 </motion.div>
                 <motion.div className="services-box" whileInView={fade} initial={{opacity: 0}}>
                     <div className="services-card">
-                        <BiCodeAlt className='services-icon' />
-                        <p className='services-title'>Web Development</p>
-                        <p className='services-desc'>I use various web technologies to develop attractive,creative, interactive, responsive and functional website layouts. </p>
+                        <BsStack className='services-icon' />
+                        <p className='services-title'>Full Stack Development</p>
+                        <p className='services-desc'>I've used various web technologies for frontend and backend to develop attractive, creative, interactive, responsive and functional website.</p>
                     </div>
                     <div className="services-card">
-                        <IoColorWandOutline className='services-icon' />
-                        <p className='services-title'>UI Design</p>
-                        <p className='services-desc'>I work with certain design tools to create high-fidelity designs and prototypes. I design accessible and usable products which aid business growth.</p>
+                        <SiHiveBlockchain className='services-icon' />
+                        <p className='services-title'>Blockchain Development</p>
+                        <p className='services-desc'>I have many experiences in the Blockchain Development including solidity, web3.js, Consensus Algorithms, Decentralized Application and so on.</p>
                     </div>
                 </motion.div>
               </div>

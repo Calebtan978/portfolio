@@ -31,12 +31,11 @@ const Contact = () => {
                 <div className="contact-box">
                     <motion.div className="left-box" initial={{opacity: 0, y: '-50px'}} whileInView={verticalLeft}>
                         <div className="contact-heading">
-                            <p>I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form</p>
+                            <p>I’m interested in Full Stack and Blockchain Development – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form</p>
                         </div>
                         <div className="contact-hello">
                             <p>Say Hello</p>
-                            <Link className='hello-links' to="//wa.me/+2348060860565" target='_blank'>wa.me/pappyjay23</Link>
-                            <Link className='hello-links' to="//mailto:pjinadu02@gmail.com" target='_blank'>pjinadu02@gmail.com</Link>
+                            <Link className='hello-links' to="//mailto:sadamithu978@gmail.com?subject='Hello from Abstract!'&body='Just popped in to say hello'" target='_blank'>sadamithu978@gmail.com</Link>
                         </div>
                     </motion.div>
                     <motion.div className="right-box" initial={{opacity: 0, y: '50px'}} whileInView={verticalLeft}>

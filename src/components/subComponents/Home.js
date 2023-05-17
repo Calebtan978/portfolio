@@ -44,10 +44,10 @@ const Home = ({ nav, handleNav }) => {
 				whileInView='visible'
 				className='hero-content'>
 				<p className='hero-intro'>
-					<span>Peace</span> <span>Jinadu-Paul.</span>
+					<span>Caleb Tan</span>
 				</p>
 				<p className='hero-desc'>
-					I'm a <span className='hero-desc-sub'>Web Developer.</span>
+					I'm a <span className='hero-desc-sub'>Full Stack/Blockchain Developer.</span>
 				</p>
 			</motion.div>
 			<motion.span

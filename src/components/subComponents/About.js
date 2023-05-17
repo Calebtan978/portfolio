@@ -21,9 +21,9 @@ const About = () => {
                   </motion.div>
                   <div className="split-about">
                     <motion.div initial={{x: '-100%', opacity: 0}} whileInView={horizontal} className="about-content">
-                        <p>Hello! My name is Peace and I enjoy creating things that live on the internet. My interest in web development started back in 2018 when I decided to try out for my first school project — turns out putting together a simple website taught me a lot about HTML & CSS! </p>
-                        <br />
-                        <p> I’ve had the privilege of working with some experienced professionals which has enhanced my skills and rate of learning. My main focus these days is building accessible, inclusive products and digital experiences, as well as creating designs and illustrations. With my experience I have what it takes to solve real world problems</p>
+                        <p>I am a Full-Stack and Blockchain engineer, with 7+years of experience in all stages of advanced web development, specialized in both frontend and backend. </p>
+                        <br/>
+                        <p>I also have full experience with Blockchain platforms using Solidity, Web3.js, React, Redux, and Node. </p>
                     </motion.div>
                     <motion.div initial={{x: '100%', opacity: 0}} whileInView={horizontal}  className='about-img'>
                       <GreetingLottie animationPath="/lottie/coding.json" />
