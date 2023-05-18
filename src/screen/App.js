@@ -8,7 +8,7 @@ function App() {
   // States
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 0)
+    setTimeout(() => setLoading(false), 300)
   }, []);
 
   const loadText = {
